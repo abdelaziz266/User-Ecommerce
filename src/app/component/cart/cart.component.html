@@ -43,16 +43,26 @@
             </td>
           </tr>
         </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td>
+              <div class="total d-flex">
+                <h3>ToTal: &nbsp;</h3>
+                <h3>{{ cartTotal }}</h3>
+              </div>
+            </td>
+            <td></td>
+            <td>
+              <button class="btn btn-success" (click)="addOrder()">
+                Order Now
+              </button>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tfoot>
       </table>
-    </div>
-  </div>
-  <div class="container">
-    <div class="order-now d-flex">
-      <div class="total d-flex">
-        <h3>ToTal: &nbsp;</h3>
-        <h3>{{ cartTotal }}</h3>
-      </div>
-      <button class="btn btn-success" (click)="addOrder()">Order Now</button>
     </div>
   </div>
 
